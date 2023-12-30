@@ -6,6 +6,7 @@ import { LuBarChart2 } from "react-icons/lu";
 import { FaArrowLeft } from "react-icons/fa";
 import Dashboard from './Dashboard';
 
+
 const SideBar = () => {
     const [open,setOpen] = useState(true);
 
@@ -28,8 +29,12 @@ const SideBar = () => {
    <p className='text-sm'>Interiors & Architecture</p>
    <br />
     <Divider  />
-    
-    
+    <div className='flex flex-1 space-between items-center space-x-2'>
+    <div className='w-[305px] flex-1 h-0.5  font-extrathin bg-white'/>
+    <IconButton size='sm' variant='plain' color='primary'>
+      <FaArrowLeft />
+    </IconButton>
+    </div>
     <div className=' mt-8 flex flex-col space-y-4'>
     <button className=' flex space-between items-center bg-white rounded-md text-black'>
     <CiHome />
