@@ -39,7 +39,7 @@ const Dashboard = () => {
 
   return (
     <div className='violet-gradient  p-2 h-full w-full'>
-    <div className='flex flex-col space-y-2 mx-5 px-10 md:flex-row md:space-between md:items-center md:space-x-6  ' >
+    <div className='space-x-2 space-y-2 mx-5 px-10  flex flex-row md:space-between items-center md:space-x-6  ' >
       <input className='w-full h-10 bg-gray-700 rounded-md'  placeholder="search here…" />
       <IconButton size='sm'  variant='solid' color='neutral'>
         <Badge color='danger'>
