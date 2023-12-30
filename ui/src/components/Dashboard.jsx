@@ -31,7 +31,7 @@ const rows = [
   createData('Dec 03, Sun', 237, "Full Day Weekly Off", " "," "),
   createData('Dec 02, Sat', 262, "8h 59m", "9h 59m", "0h 30m"),
   createData('Dec 01, Fri', 305, "8h 59m", "9h 59m", "1h 30m", "0h 30m late"),
-  createData('Nov 30, Thu', "","","",""),
+  createData('Nov 30, Thu', "","Sick Leave","",""),
 ];
 
 const Dashboard = () => {
@@ -185,7 +185,7 @@ const Dashboard = () => {
            { row.name ===  'Dec 03, Sun'?<td></td> :
            row.name ===  'Nov 30, Thu'? <td></td>: <td style={{ display:'flex',flexDirection:"column", alignItems:'center'}}><FcComboChart /></td>}
             { row.name ===  'Dec 03, Sun'?<td>{row.fat}</td>:
-              row.name ===  'Nov 30, Thu'?<td></td> :
+              row.name ===  'Nov 30, Thu'?<td>{row.fat}</td> :
             <td >
                  <div className='flex flex-auto'>
                 <FcPieChart />
