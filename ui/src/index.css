@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  
+    font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+
+}
+
+.text-cormorant{
+    font-family: 'Cormorant Upright', serif;
+}
+.borderA{
+  box-shadow:5px 5px 10px rgb(rgb(237, 192, 192), rgb(113, 151, 113), rgb(105, 105, 106));
+}
+
+
+
+.violet-gradient {
+
+  background: linear-gradient(to bottom, #0e012a 0%, rgba(60, 51, 80, 0) 100%);
+
+
+}
+.selector {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
