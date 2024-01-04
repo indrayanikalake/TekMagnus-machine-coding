@@ -57,7 +57,7 @@ const ContainerA = () => {
          </div>
       </div>
       <div className='py-2'>
-        <h4 className='font-semibold ms-2 text-center'>Action</h4>
+        <h4 className='font-semibold ms-2 md:text-center'>Action</h4>
         <div className='mt-6 p-4 md:py-6 flex flex-col md:flex-row md:justify-between md:items-center md:space-x-1'>
             <div className='  p-2 borderA md:p-3 rounded-md space-y-2 '>
               <h1 className=' text-3xl'>04:04:39 PM</h1>

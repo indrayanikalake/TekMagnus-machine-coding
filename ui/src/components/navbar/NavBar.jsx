@@ -19,7 +19,7 @@ const NavBarA = () => {
         <MdOutlineMail />
         </Badge>
       </IconButton>   
-         <DiCodeigniter style={{ width:"8rem", height:"2.5rem"}} />
+         <DiCodeigniter style={{ width:"4rem", height:"2.5rem"}} />
       <Avatar size='sm' alt='user' src={about} />
     </div>
   )
