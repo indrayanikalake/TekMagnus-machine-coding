@@ -1,29 +1,19 @@
 import React, { useState } from 'react'
-import { Button, Divider, IconButton} from '@mui/joy';
+import {  Divider, IconButton} from '@mui/joy';
 
 import { CiHome } from "react-icons/ci";
 import { LuBarChart2 } from "react-icons/lu";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaArrowUp } from "react-icons/fa";
 import Dashboard from './Dashboard';
+import { IoIosArrowUp } from 'react-icons/io';
 
 
 const SideBar = () => {
-    const [open,setOpen] = useState(true);
-
-
- const toggleDrawer = (inOpen) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setOpen(inOpen);
-  };
   
   return (
     <div className=' text-white flex space-between '>
      
-    <div  className='hidden lg:block borderA p-10 m-2 h-[735px] w-[280px] bg-black rounded-md text-white '>
-    
+    <div  className='hidden lg:block borderA p-10 m-2 h-[785px] w-[280px] bg-black rounded-md text-white '>
     
    <h1 className='text-[50px] text-cormorant font-extrabold'>KDISD</h1>
    <p className='text-sm'>Interiors & Architecture</p>
@@ -36,17 +26,19 @@ const SideBar = () => {
     </IconButton>
     </div>
     <div className=' mt-8 flex flex-col space-y-4'>
-    <button className=' flex space-between items-center bg-white rounded-md text-black'>
+    <button className=' p-2 flex space-x-10  items-center bg-white rounded-full text-black'>
     <CiHome />
     Home</button>
-    <button className=' flex space-between items-center bg-orange-600 rounded-md'>
+    <button className='p-2 flex space-x-4 items-center bg-orange-600 rounded-full'>
       <LuBarChart2 />
-      My Space</button>
+      My Space
+     <IoIosArrowUp />
+      </button>
       </div>
 
     <div className='text-gray-400 cursor-pointer mt-5 space-y-3 px-10 text-sm flex flex-col'>
        <p className='hover:text-orange-500'>Leave</p>
-       <p className='hover:text-orange-500'>Attendance</p>
+       <p className=' text-orange-600 hover:text-orange-500'>Attendance</p>
        <p className='hover:text-orange-500'>Performance</p>
        <p className='hover:text-orange-500'>Leave</p>
 

@@ -1,5 +1,5 @@
 import res from './res.png'
-import about from './aboutus.jpg'
+import about from './zoomed.jpg'
 
 export{
     res,

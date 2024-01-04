@@ -28,10 +28,15 @@ body {
 
   background: linear-gradient(to bottom, #0e012a 0%, rgba(60, 51, 80, 0) 100%);
 
+}
 
+.background_img{
+  background: url("https://tse1.mm.bing.net/th?id=OIP.Tv-Lk9oPJ4-RKhIV_dOXqQHaEK&pid=Api&P=0&h=180");
+  background-size: cover;
 }
 .selector {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); /* Adjust values as needed */
+
 }
 
 code {
